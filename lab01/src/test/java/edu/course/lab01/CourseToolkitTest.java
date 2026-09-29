@@ -13,6 +13,13 @@ class CourseToolkitTest {
 
         assertTrue(result);
     }
+    
+    @Test
+    void returnsTrueForZero() {
+        boolean result = CourseToolkit.isEven(0);
+
+    assertTrue(result);
+    }
 
     @Test
     void returnsFalseForOddNumber() {
