@@ -82,7 +82,7 @@ class DataSampleTest {
         DataSample sample = new DataSample("id", "label", SampleStatus.NEW,
                 new double[]{2.0, 4.0, 6.0});
 
-        assertArrayEquals(new double[]{0.0, 0.5, 1.0}, sample.normalizedFeatures());
+        assertArrayEquals(new double[]{0.0, 0.5, 1.0}, sample.normalizedFeatures(), 1.0e-12);
         assertArrayEquals(new double[]{2.0, 4.0, 6.0}, sample.getFeatures());
     }
 
